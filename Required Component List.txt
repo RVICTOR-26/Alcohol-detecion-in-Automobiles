@@ -1,0 +1,14 @@
+Component List:
+1)Arduino UNO: A microcontroller board based on the ATmega328P, with digital and analog I/O pins.
+2)MQ-3 Breakout: An alcohol gas sensor module capable of detecting alcohol concentration in the air.
+3)MPU-6050: A motion-tracking device with a 3-axis gyroscope and a 3-axis accelerometer.
+4)Sim800l: A GSM/GPRS module for cellular communication.
+5)Polymer Lithium Ion Battery - 850mAh: A rechargeable battery providing power to the circuit.
+6)Resistor: A passive two-terminal electrical component used to limit current or divide voltages.
+7)GPS NEO 6M: A GPS module for receiving location data from satellites.
+8)L298N DC motor driver: A module for controlling DC motors with direction and speed control.
+9)12v Battery: A power source for the motor driver and connected motors.
+10)DC Motor: An electric motor that runs on direct current electricity.
+11)Buzzer: An audio signaling device.
+12)LED (yellow): A yellow light-emitting diode used as an indicator.
+13)Electrolytic Capacitor: A capacitor used for filtering or noise reduction in power supplies.

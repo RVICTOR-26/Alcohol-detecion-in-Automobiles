@@ -1,0 +1,73 @@
+Wiring Details
+Arduino UNO
+5V: Connected to VCC of MPU-6050, GPS NEO 6M, and MQ-3 Breakout.
+GND: Common ground with MPU-6050, GPS NEO 6M, MQ-3 Breakout, Sim800l, buzzer, and the negative side of the Electrolytic Capacitor.
+A0: Connected to AO of MQ-3 Breakout.
+A4 (SDA): Connected to SDA of MPU-6050.
+A5 (SCL): Connected to SCL of MPU-6050.
+D3: Connected to RX of GPS NEO 6M.
+D4: Connected to TX of GPS NEO 6M.
+D7: Connected to TXD of Sim800l.
+D8: Connected to one end of a Resistor, which is connected to the PIN of the buzzer.
+D9: Connected to the anode of the LED.
+D10: Connected to IN1 of L298N DC motor driver.
+D11: Connected to IN2 of L298N DC motor driver.
+D12: Connected to ENA of L298N DC motor driver.
+
+MQ-3 Breakout
+VCC: Connected to 5V of Arduino UNO.
+GND: Common ground with Arduino UNO.
+AO: Connected to A0 of Arduino UNO.
+
+MPU-6050
+VCC: Connected to 5V of Arduino UNO.
+GND: Common ground with Arduino UNO.
+SDA: Connected to A4 (SDA) of Arduino UNO.
+SCL: Connected to A5 (SCL) of Arduino UNO.
+
+Sim800l
+VCC: Connected to VCC of Polymer Lithium Ion Battery and the positive side of the Electrolytic Capacitor.
+GND: Common ground with Arduino UNO, Resistor, and the negative side of the Electrolytic Capacitor.
+TXD: Connected to D7 of Arduino UNO.
+RXD: Connected to one end of a Resistor.
+
+Polymer Lithium Ion Battery - 850mAh
+VCC: Connected to VCC of Sim800l and the positive side of the Electrolytic Capacitor.
+GND: Connected to one end of a Resistor.
+
+Resistor
+Various resistors are used for current limiting and voltage division in the circuit.
+
+GPS NEO 6M
+VCC: Connected to 5V of Arduino UNO.
+GND: Common ground with Arduino UNO.
+RX: Connected to D3 of Arduino UNO.
+TX: Connected to D4 of Arduino UNO.
+
+L298N DC motor driver
+GND: Common ground with Arduino UNO and the negative side of the 12v Battery.
+5V: Connected to the positive side of the 12v Battery.
+ENA: Connected to D12 of Arduino UNO.
+IN1: Connected to D10 of Arduino UNO.
+IN2: Connected to D11 of Arduino UNO.
+OUT1/OUT2: Connected to the DC Motor.
+
+12v Battery
++: Connected to 5V of L298N DC motor driver.
+-: Common ground with Arduino UNO and L298N DC motor driver.
+
+DC Motor
+Pin 1: Connected to OUT2 of L298N DC motor driver.
+Pin 2: Connected to OUT1 of L298N DC motor driver.
+
+Buzzer
+PIN: Connected to one end of a Resistor, which is connected to D8 of Arduino UNO.
+GND: Common ground with Arduino UNO.
+
+LED (yellow)
+Anode: Connected to D9 of Arduino UNO.
+Cathode: Connected to one end of a Resistor.
+
+Electrolytic Capacitor
++: Connected to VCC of Polymer Lithium Ion Battery.
+-: Common ground with Sim800l.
